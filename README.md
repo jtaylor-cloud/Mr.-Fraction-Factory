@@ -1,113 +1,104 @@
 🏭 Mr. Fraction's Factory
-An interactive fractions website for middle school students, built as a single HTML file with a factory theme. Designed to be dyslexia-friendly using the Atkinson Hyperlegible font with high contrast, generous spacing, and clear visual explanations.
+An interactive, self-contained web application for middle school students to explore, practice, and master fractions — guided by Mr. Fraction himself.
 
-📁 File Structure
-Your repository should look exactly like this:
-your-repo/
-├── index.html
-├── README.md
-├── Gear.png
-├── Pizza.png
-├── Pie.png
-├── Mr__Fraction_Front.png
-├── Mr__Fraction_Back.png
-├── Mr__Fraction_Left_Side.png
-├── Mr__Fraction_Right_Side.png
-├── Mr__Fraction_Ladder.png
-└── Mr__Fraction_GIF.png
+What It Is
+Mr. Fraction's Factory is a single HTML file that runs entirely in any web browser with no installation, no internet connection required after loading, and no external dependencies. Every image, font reference, and tool is embedded directly in the file.
+The app is designed to be dyslexia-friendly — using Atkinson Hyperlegible as the primary font, a warm cream background, high-contrast colours, large readable text, and visual representations alongside every concept.
 
-⚠️ All image files must be in the same folder as index.html. The names are case-sensitive — do not rename them.
+How to Use
 
+Download index.html
+Open it in any modern web browser (Chrome, Edge, Firefox, Safari)
+That's it — no server, no setup, no login required
 
-🚀 Hosting on GitHub Pages
-Step 1 — Create a GitHub Repository
+To host it for students, upload the single index.html file to any web host, Google Drive (share as link), OneDrive, or a school LMS. Nothing else is needed.
 
-Go to github.com and sign in
-Click the + button (top right) → New repository
-Give it a name, e.g. mr-fractions-factory
-Set it to Public
-Click Create repository
+The Four Stations
+📖 Station 01 — What Are Fractions? (Lesson)
+An 8-step interactive lesson that walks students through fraction fundamentals from scratch.
 
-Step 2 — Upload Your Files
+Interactive pizza model — click to eat slices and watch the fraction change in real time
+Fraction types explorer — tap cards to reveal proper fractions, improper fractions, and mixed numbers with explanations
+Equivalent fractions table — use a slider to multiply a fraction and see the pattern build
+Comparison tool — two side-by-side bar models with sliders to compare any two fractions visually
+Number line — drag a slider to place any fraction on a number line between 0 and 10
+Real-world matching game — match everyday scenarios (pizza slices, clock time, basketball shots) to their fraction
+Built-in quizzes — multiple-choice questions at key steps with instant feedback
 
-On your new repository page, click Add file → Upload files
-Drag and drop ALL files into the upload area:
+🔧 Station 02 — Simplify Fractions
+Students enter any fraction and see it simplified step by step.
 
-index.html
-README.md
-All 9 PNG image files
+Step-by-step Euclidean algorithm — every division step shown with remainders
+GCF verification — confirms the Greatest Common Factor divides evenly into both parts
+Division walkthrough — visual breakdown of dividing numerator and denominator by the GCF
+Circle model — pie chart visuals comparing the original and simplified fraction
+Bar model — segmented bar visuals for both fractions side by side
+Random fraction button — generates a random unsimplified fraction instantly
+"Already simplified" detection — tells students when GCF = 1 and no simplification is needed
 
+⚙️ Station 03 — Fraction Operations
+A visual manipulative tool for adding, subtracting, multiplying, and dividing fractions.
 
-Scroll down, add a commit message like Initial upload, and click Commit changes
+Rectangle builders — students use sliders to set the number of rectangles and cuts, then click cells to select a fraction
+Four operations — add (+), subtract (−), multiply (×), divide (÷)
+LCD guidance — when adding or subtracting, the tool detects mismatched denominators, calculates the GCF and LCD, and prompts students to align them before solving
+Colour-coded results — each operation uses distinct colours to show which parts of the result came from which fraction
+Grid model for multiplication — overlapping rows and columns show the product as an intersection area
+Division grouping arrows — animated arrows show how many times Fraction B fits inside Fraction A
 
-Step 3 — Enable GitHub Pages
+🔄 Station 04 — Convert Fractions
+A live converter that links fractions, decimals, and percentages — change any one and all three update instantly.
 
-Go to your repository's Settings tab
-In the left sidebar, click Pages
-Under Source, select Deploy from a branch
-Set the branch to main and the folder to / (root)
-Click Save
-
-Step 4 — Get Your URL
-GitHub will show you a URL like:
-https://your-username.github.io/mr-fractions-factory/
-It may take 1–2 minutes to go live after the first deploy. Refresh the Pages settings screen until you see the green "Your site is published" banner.
-
-🖥️ Testing Locally (Before Uploading)
-You cannot just double-click index.html — browsers block local images for security reasons. Use one of these options instead:
-Option A — VS Code Live Server (Recommended)
-
-Install VS Code
-Install the Live Server extension (search in the Extensions panel)
-Open your project folder in VS Code
-Right-click index.html → Open with Live Server
-Your browser will open automatically at http://localhost:5500
-
-Option B — Python (Mac / Linux)
-Open Terminal in your project folder and run:
-bashpython -m http.server 8000
-Then go to http://localhost:8000 in your browser.
-Option C — Python (Windows)
-Open Command Prompt in your project folder and run:
-bashpython -m http.server 8000
-Then go to http://localhost:8000 in your browser.
-
-📚 What's Inside
-StationDescription🏠 Landing PageModule selection with Mr. Fraction and the factory theme📖 Station 01 — Lesson8 interactive steps covering fraction basics, types, equivalence, comparing, and real-life uses. Includes quizzes and clickable activities.🔧 Station 02 — SimplifyEnter any fraction to see step-by-step GCF calculation with pie chart and bar model visuals⚙️ Station 03 — OperateAdd, subtract, multiply, and divide fractions using visual rectangle builders🔄 Station 04 — ConvertExplore how fractions, decimals, and percentages represent the same value
-
-♿ Accessibility & Dyslexia-Friendly Design
-
-Atkinson Hyperlegible font throughout — designed specifically for low-vision and dyslexic readers
-Minimum 18px body text
-High contrast dark theme with warm off-white text (no pure white on dark)
-Extra line spacing (1.7)
-No italics used for instructions
-Large, clearly labelled buttons
-Visual representations alongside every mathematical concept
+Fraction inputs — numerator and denominator number fields
+Decimal slider and input — values from 0 to 10, synced to the fraction
+Percentage slider and input — 0% to 1000%, synced to the fraction
+Pie chart model — circle divided into slices matching the denominator
+Number line — shows the decimal value on a segmented line, with overflow rows for values over 10
+Percentage bar — fills a rectangle proportionally, with overflow rows for values over 100%
+Reset button — returns everything to 3/4 as a clean starting point
 
 
-🌐 Moving to Another Platform
-The site is a single self-contained HTML file. To move it to any other hosting platform (Netlify, Vercel, a school server, etc.):
+Mr. Fraction — Your Guide
+Mr. Fraction is a cartoon character who appears throughout the app as a floating guide in the bottom-right corner of every station. He:
 
-Upload index.html and all PNG files to the new platform
-Keep all files in the same directory
-Make sure index.html is set as the entry point
+Greets students when they enter each station with station-specific dialogue
+Reacts to interactions — correct quiz answers, wrong answers, simplifying fractions, clicking the pizza, switching tabs, changing the converter, solving operations
+Changes pose depending on the station — climbing a ladder in the Lesson, facing sideways in the Simplifier, front-facing in Operations
+Can be dismissed by clicking him — he'll stay quiet for 8 seconds before responding again
+Speaks again if clicked when silent — he'll offer an encouragement or hint
 
-No build tools, no dependencies, no server-side code required.
+The animated GIF version of Mr. Fraction appears on the loading screen.
 
-🛠️ Dependencies
-All loaded from CDN — no installation needed:
+Loading Screen
+When the app first opens, a factory-themed loading screen plays for approximately 3 seconds:
 
-Atkinson Hyperlegible — Google Fonts
-Bebas Neue — Google Fonts (display headings)
+Animated spinning gears in the corners
+Mr. Fraction's animated GIF bouncing in the centre
+A progress bar with cycling status messages
+A scrolling conveyor belt at the bottom
 
 
-📡 An internet connection is required to load the fonts. If hosting in an offline environment, download the fonts and update the <link> tag in index.html to point to local copies.
+Technical Notes
+PropertyDetailFile typeSingle .html fileFile size~4.3 MB (all images embedded as base64)DependenciesNone — fully self-containedFontsAtkinson Hyperlegible, Bebas Neue (loaded from Google Fonts — requires internet on first load; cached after)Browser supportAll modern browsers (Chrome 80+, Firefox 75+, Safari 13+, Edge 80+)MobileResponsive — works on tablets and phones
+To make it fully offline
+The only external dependency is Google Fonts. To remove it, open the file in a text editor, find the <link> tag near the top that references fonts.googleapis.com, and replace it with locally-hosted font files. Everything else already works offline.
+
+Images
+All images in the app are of Mr. Fraction — a cartoon character created for this project — along with prop images (pizza, pie, gear). They are embedded directly in the HTML as base64-encoded PNG data, so no separate image files are needed.
+
+Accessibility
+
+Atkinson Hyperlegible font — designed specifically for readers with dyslexia and low vision
+Cream background (#f5eed8) — reduces visual stress compared to pure white
+High contrast text — dark brown on cream throughout
+Large font sizes — 18px base with generous line height
+Keyboard support — Enter key triggers simplification in the Simplifier station
+No time limits — students can work at their own pace
 
 
-👨‍🏫 For Teachers
-
-No login or accounts required
-Works on tablets and desktops
-Students can use it independently or alongside classroom instruction
-Each station is self-contained — you can assign specific stations without students needing to complete others first
+Credits
+Character design: Mr. Fraction — original cartoon character
+Educational content: Aligned with middle school fraction curriculum
+Built with: HTML, CSS, JavaScript — no frameworks or libraries
+Font: Atkinson Hyperlegible by the Braille Institute
+Display font: Bebas Neue
